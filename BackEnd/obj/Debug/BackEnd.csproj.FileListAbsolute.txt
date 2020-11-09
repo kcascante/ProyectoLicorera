@@ -20,3 +20,4 @@ D:\EscritorioKarian\EscActual\Progra5\ProyectoLicorera\Licorera\Licorera\BackEnd
 D:\EscritorioKarian\EscActual\Progra5\ProyectoLicorera\Licorera\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
 D:\EscritorioKarian\EscActual\Progra5\ProyectoLicorera\Licorera\Licorera\BackEnd\obj\Debug\BackEnd.dll
 D:\EscritorioKarian\EscActual\Progra5\ProyectoLicorera\Licorera\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+D:\EscritorioKarian\EscActual\Progra5\ProyectoLicorera\Licorera\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache

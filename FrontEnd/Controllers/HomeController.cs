@@ -77,6 +77,34 @@ namespace FrontEnd.Controllers
             }
             return View(lista);
         }
+        public ActionResult Details(int id) /*Agregué este details para hacer un boton de los detalles del producto para agrregarlo al carrito*/
+        {
+
+            Licores licor;
+            using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+            {
+                licor = unidad.genericDAL.Get(id);
+            }
+
+            LicoresViewModel licorViewModel = this.Convertir(licor);
+
+            using (UnidadDeTrabajo<Marcas> Unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
+            {
+                licorViewModel.marca = Unidad.genericDAL.Get(licor.idMarca);
+            }
+
+            using (UnidadDeTrabajo<Tipos> Unidad = new UnidadDeTrabajo<Tipos>(new BDContext()))
+            {
+                licorViewModel.tipo = Unidad.genericDAL.Get(licor.idTipo);
+            }
+
+            using (UnidadDeTrabajo<Proveedores> Unidad = new UnidadDeTrabajo<Proveedores>(new BDContext()))
+            {
+                licorViewModel.proveedor = Unidad.genericDAL.Get(licor.idProveedor);
+            }
+
+            return View(licorViewModel);
+        }
 
         public ActionResult About()
         {

@@ -129,6 +129,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LicoresController.cs" />
     <Compile Include="Controllers\MarcasController.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CarritoViewModel.cs" />
     <Compile Include="Models\LicoresViewModel.cs" />
     <Compile Include="Models\MarcasViewModel.cs" />
     <Compile Include="Models\ProveedoresViewModel.cs" />
@@ -309,6 +311,8 @@
     <Content Include="Views\Proveedores\Delete.cshtml" />
     <Content Include="Views\Shared\NormalUser_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

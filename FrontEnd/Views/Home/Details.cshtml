@@ -1,0 +1,79 @@
+﻿@model FrontEnd.Models.LicoresViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
+}
+
+
+
+    <div class="container">
+        <h2>Detalles</h2>
+        <h4>LicoresViewModel</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            
+
+            <dd>
+                <figure class="figure">
+                    @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", Model.Foto_Licor);}
+                    <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
+
+                </figure>
+
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.idMarca)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.marca.vNombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.idTipo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.tipo.vNombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.vDescripción)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.vDescripción)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.iUnidades)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.iUnidades)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.iPrecio)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.iPrecio)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.iMl)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.iMl)
+            </dd>
+
+        </dl>
+        <p>
+
+            @Html.ActionLink("Volver", "Index",null, new { @class = "btn btn-danger" })
+        </p>
+    </div>
+
